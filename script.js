@@ -1,39 +1,38 @@
 // 1. BMİ Hesablayıcı
 
-// function bmiHesablayıcı(ceki, boy) {
-//   let bmi = ceki / (boy * boy);
-//   if (bmi < 25) {
-//     console.log("Norma");
-//   } else if (bmi <= 30) {
-//     console.log("Artıq ceki")
-//   }
-//   else {
-//     console.log("Piylenme")
-//   }
-//   return bmi
-// }
+function bmiHesablayıcı(ceki, boy) {
+  let bmi = ceki / (boy * boy);
+  if (bmi < 25) {
+    console.log("Norma");
+  } else if (bmi <= 30) {
+    console.log("Artıq ceki")
+  }
+  else {
+    console.log("Piylenme")
+  }
+  return bmi
+}
 
-// let netice=(45,1.75)
-// console.log(bmiHesablayıcı)
+console.log(bmiHesablayıcı(45,1.5))
 
 
 
 // 3. Scope Eksperimenti
 
-// let reng = "qırmızı";
+let reng = "qırmızı";
 
-// function boyama() {
-//   let reng = "mavi";
-//   console.log("boyama içi:", reng);
+function boyama() {
+  let reng = "mavi";
+  console.log("boyama içi:", reng);
 
-//   function cercive() {
-//     console.log("cercive içi:", reng);
-//   }
-//   cercive();
-// }
+  function cercive() {
+    console.log("cercive içi:", reng);
+  }
+  cercive();
+}
 
-// boyama();
-// console.log("global:", reng); // boyama içi: mavi,cercive içi: mavi,global: qırmızı
+boyama();
+console.log("global:", reng); // boyama içi: mavi,cercive içi: mavi,global: qırmızı
 
 
 
